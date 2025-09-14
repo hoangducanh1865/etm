@@ -209,5 +209,8 @@ __marimo__/
 .DS_Store
 debug/
 tmp/
-data/preprocessed_data/
+data/preprocessed_data/*
 !data/preprocessed_data/.gitkeep
+cc.en.300.bin
+data/pre_trained_embeddings/*
+!data/pre_trained_embeddings/.gitkeep

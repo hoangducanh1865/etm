@@ -6,7 +6,7 @@ from scipy.io import savemat
 from src.config.config import Config as cfg 
 
 
-class DatasetPreprocessor:
+class DataPreprocessor:
     
     def __init__(self, max_df=0.7, min_df=100, train_ratio=0.85, test_ratio=0.10):
         self.max_df = max_df
@@ -201,7 +201,7 @@ class DatasetPreprocessor:
 '''
 if __name__ == "__main__":
     # Create preprocessor instance
-    preprocessor = DatasetPreprocessor(max_df=0.7, min_df=100)
+    preprocessor = DataPreprocessor(max_df=0.7, min_df=100)
     
     # Load stopwords and process documents
     preprocessor.load_stopwords()
